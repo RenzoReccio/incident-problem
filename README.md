@@ -36,10 +36,11 @@ npm run dev
 - When creating an incident, if no name is passed in the constructor, a random name will be given.
 - closed_incident: Change the state of an incident to "solved" and the solved_date is set to the current time if no date is passed.
 
-#### Incident.ts
+#### Store.ts
 - Contains the logic to store incidents.
 - When creating an store its possible to pass a number, this will create a number of random incidents.
 - incident_status: Calculate the open_cases, closed_cases, average_solution, maximum_solution
+- incidents: A list containing all the incidents of the store. Push more incidints as you want.
 
 ### app.ts
 - This file execute the program, in this example I've initialized the Store class in "store" with 50 random incidents.
